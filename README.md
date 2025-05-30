@@ -63,6 +63,29 @@ Implemented in `classification_models.py` and evaluated using ROC curves:
 
 ## Results   
 
+For each vectorization method, the following classifiers were evaluated: Logistic Regression, Bernoulli Naive Bayes, Random Forest, and SVM. The ROC curves for each combination are plotted for visual comparison.
+
+### Performance Plots
+- **TFI-DF Text Vectorization**
+
+![image](https://github.com/user-attachments/assets/3f852205-2f5b-4ab6-bbb9-ca4d600b1a24)
+
+- **One-word Embedding**
+
+![image](https://github.com/user-attachments/assets/267ba4b4-823b-419b-9fa2-efb0947fe230)
+
+- **LDA Text Classification**
+
+![image](https://github.com/user-attachments/assets/cf18cca2-0ded-4399-8c69-a4245a028a3c)
+
+- **LSA Text Vectorization**
+
+![image](https://github.com/user-attachments/assets/eaedb6b1-d5e6-4058-9374-996a4bc2632e)
+
+
+
+
+
 
 
 
