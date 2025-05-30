@@ -1,2 +1,69 @@
 # Question-Identification-using-Text-Vectorization-and-ML-Classifiers
-This project aims to identify questions in text dataset using various text vectorization techniques and classical machine learning classifiers. The workflow includes preprocessing text, transforming it into numerical representations, and evaluating multiple classifiers to determine which combination yields the best performance.
+This project focuses on identifying whether a given sentence is a question using various text vectorization techniques and classical machine learning classifiers. It preprocesses text data, transforms it using methods like TF-IDF, word embeddings, LDA, and LSA, and evaluates the performance of ML classifiers such as Logistic Regression, Naive Bayes, Random Forest, and SVM. The results help determine the most effective combination for question identification in text.
+
+## Project Structure
+
+```
+.
+├── main.ipynb                # Main notebook to run experiments and visualize results
+├── vectorization_models.py   # Implements different text vectorization methods
+├── classification_models.py  # Contains classification and ROC plotting logic
+├── data_preprocess.py        # Text cleaning and preprocessing functions
+├── Project_data.csv          # Input dataset (not included here)
+```
+
+## Data Preprocessing
+
+- **Lowercasing:** Converts all text to lowercase.
+- **Cleaning:** Removes non-alphabetic characters (except question marks).
+- **Tokenization:** Splits sentences into words.
+- **Stopword Removal:** Removes common English stopwords.
+- **Lemmatization:** Reduces words to their root form.
+
+All preprocessing is handled by `data_preprocess.py`.
+
+## Text Vectorization Models
+
+Implemented in `vectorization_models.py`:
+
+1. **TF-IDF Text Vectorization:**  
+   Converts text to TF-IDF features.
+2. **One-word Embedding:**  
+   Uses Keras Embedding and GlobalAveragePooling1D to generate dense representations.
+3. **LDA Text Classification:**  
+   Applies Latent Dirichlet Allocation for topic-based features.
+4. **LSA Text Vectorization:**  
+   Uses Truncated SVD (LSA) on TF-IDF features for dimensionality reduction.
+
+
+## Classification Models
+
+Implemented in `classification_models.py` and evaluated using ROC curves:
+
+- Logistic Regression
+- Bernoulli Naive Bayes
+- Random Forest
+- Support Vector Machine (SVM)
+
+## How to Run
+
+1. **Install dependencies:**
+   ```
+   pip install pandas scikit-learn nltk tensorflow matplotlib
+   ```
+2. **Download NLTK resources:**
+   ```python
+   import nltk
+   nltk.download('punkt')
+   nltk.download('stopwords')
+   nltk.download('wordnet')
+   ```
+3. **Run the notebook:**  
+   Open `main.ipynb` in VS Code or Jupyter and execute all cells.
+
+## Results   
+
+
+
+
+
