@@ -20,7 +20,7 @@ This project focuses on identifying whether a given sentence is a question using
 - **Stopword Removal:** Removes common English stopwords.
 - **Lemmatization:** Reduces words to their root form.
 
-All preprocessing is handled by `[data_preprocess.py](https://github.com/KrishnaAggarwal2003/Question-Identification-using-Text-Vectorization-and-ML-Classifiers/blob/main/data_preprocess.py)`.
+All preprocessing is handled by `[data_preprocess.py]`.
 
 ## Text Vectorization Models
 
