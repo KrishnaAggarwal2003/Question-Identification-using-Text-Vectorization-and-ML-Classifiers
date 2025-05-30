@@ -9,7 +9,7 @@ This project focuses on identifying whether a given sentence is a question using
 ├── vectorization_models.py   # Implements different text vectorization methods
 ├── classification_models.py  # Contains classification and ROC plotting logic
 ├── data_preprocess.py        # Text cleaning and preprocessing functions
-├── Project_data.csv          # Input dataset (not included here)
+├── Project_data.csv          # Text dataset
 ```
 
 ## Data Preprocessing
@@ -20,7 +20,7 @@ This project focuses on identifying whether a given sentence is a question using
 - **Stopword Removal:** Removes common English stopwords.
 - **Lemmatization:** Reduces words to their root form.
 
-All preprocessing is handled by `[data_preprocess.py]`.
+All preprocessing is handled by `data_preprocess.py`.
 
 ## Text Vectorization Models
 
