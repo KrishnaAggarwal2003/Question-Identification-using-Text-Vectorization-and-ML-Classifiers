@@ -83,6 +83,12 @@ For each vectorization method, the following classifiers were evaluated: Logisti
 ![image](https://github.com/user-attachments/assets/eaedb6b1-d5e6-4058-9374-996a4bc2632e)
 
 
+## Conclusion
+
+- The project demonstrates the effectiveness of combining text vectorization with classical classifiers for question identification.
+- The best performance was achieved using **[One-word embedding + Random Forest]** with the ROC curve area of 86%.
+
+
 
 
 
